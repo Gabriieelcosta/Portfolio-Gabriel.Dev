@@ -1,0 +1,56 @@
+.header {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.548);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0px;
+  background: rgb(152, 166, 139);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  list-style: none;
+}
+
+.logo {
+  padding: .5rem 0;
+}
+
+.navItems {
+  display: flex;
+  gap: 60px;
+}
+
+.headerItem {
+  color: #333; /* Cor mais branca */
+  margin-left: 20px; /* Ajuste a margem entre os itens conforme necessário */
+}
+
+
+/* Media query para telas menores */
+@media (max-width: 800px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navItems {
+    display: none;
+    flex-direction: column;
+    gap: 10px; /* Ajuste a margem entre os itens conforme necessário */
+    width: 8rem;
+  }
+
+  .navItems.showMenu {
+    display: flex;
+    background: rgb(152, 166, 139);
+
+  }
+
+  .headerItem {
+    margin-left: 0; /* Remover margem esquerda em telas menores */
+  }
+}
