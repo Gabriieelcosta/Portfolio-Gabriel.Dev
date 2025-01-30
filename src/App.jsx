@@ -9,19 +9,18 @@ import Projetos from "./Components/Projetos/Projetos";
 import Contato from "./Components/Contato/Contato";
 import Habilidade from "./Components/Habilidade/Habilidade";
 
-
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/sobre" element={<Sobre/>} />
-          <Route path="/habilidade" element={<Habilidade/>} />
-          <Route path="/projetos" element={<Projetos/>} />
-          <Route path="/contato" element={<Contato/>} />
-        </Routes> 
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/habilidade" element={<Habilidade />} />
+          <Route path="/projetos" element={<Projetos />} />
+          <Route path="/contato" element={<Contato />} />
+        </Routes>
         <Footer />
       </BrowserRouter>
     </div>
