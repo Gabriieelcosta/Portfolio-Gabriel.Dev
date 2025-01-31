@@ -4,9 +4,7 @@ import styles from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className={styles.wrapper}>
-
-
+    <div className={`${styles.wrapper}`}>
       <div className={styles.container}>
         <div className={styles.text}>
           <p>Seja Bem-Vindo(a), me chamo</p>

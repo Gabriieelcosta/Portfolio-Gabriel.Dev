@@ -1,0 +1,37 @@
+h1{
+  margin-bottom: 20px;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.sobre_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.sobre_text {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6; /* Espaçamento entre linhas */
+  letter-spacing: 0.5px; /* Espaçamento entre letras */
+  font-weight: 400; /* Peso da fonte */
+  color: #333; /* Cor do texto */
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,79 @@
+.contato_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.contato_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form_group {
+  margin-bottom: 15px;
+}
+
+.form_group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form_group input,
+.form_group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit_button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(65, 78, 53);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit_button:hover {
+  background-color: rgb(98, 105, 92);
+}
+
+.contact_icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact_icons a {
+  color: #333;
+  font-size: 24px; /* Tamanho dos ícones */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact_icons a:hover {
+  color: rgb(98, 105, 92);
+  transform: scale(1.2); /* Aumenta o tamanho dos ícones ao passar o mouse */
+}
+
+.contact_icons p {
+  margin-top: 5px;
+  font-size: 14px;
+}
