@@ -1,10 +1,12 @@
-import React from 'react'
-import styles from './Footer.module.css'
+import React from "react";
+import styles from "./Footer.module.css";
 
 const Footer = () => {
   return (
-    <div style={styles.footer}>Footer</div>
-  )
-}
+    <div className={styles.footer}>
+      <p>© 2025 Gabriel Oliveira. Todos os direitos reservados.</p>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

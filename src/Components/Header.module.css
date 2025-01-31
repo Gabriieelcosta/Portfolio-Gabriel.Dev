@@ -27,6 +27,24 @@
 .headerItem {
   color: #333; /* Cor mais branca */
   margin-left: 20px; /* Ajuste a margem entre os itens conforme necessário */
+  position: relative;
+  display: inline-block;
+}
+
+.headerItem::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background-color: rgb(48, 48, 48);
+  transition: width 0.5s ease, left 0.4s ease;
+}
+
+.headerItem:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 

@@ -1,9 +1,16 @@
-.container {
-  height: 100vh; 
+.wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  height: 100vh; 
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 .text p{
@@ -64,8 +71,14 @@
 .avatar img {
   width: 100%; /* Defina a largura desejada */
   height: auto; /* Mantém a proporção da imagem */
-  border-radius: 30%; /* Deixa a imagem redonda */
+  border-radius: 4px; 
+
+  transition: transform 0.3s; /* Adiciona um efeito de transição */
   
+}
+
+.avatar img:hover {
+  transform: scale(1.2); /* Aumenta a imagem em 10% */
 }
 
 
